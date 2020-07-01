@@ -105,7 +105,7 @@ p.lead {
       flex-direction: column;
       width: 17rem;
       height: 100vh;
-      border: 1px solid #dbdbdb;
+      border: 1px solid rgba(255, 255, 255, .2)
    }
    #sideNav .navbar-brand {
       display: -webkit-box;

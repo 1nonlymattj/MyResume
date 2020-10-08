@@ -37,4 +37,19 @@
       target : '#sideNav'
    });
 
+   $(document).ready(function() {
+
+      $("#source").change(function() {
+
+         var el = $(this);
+
+         if (el.val() === "Sales") {
+            $("#sales").removeClass("hidden");
+         } else if (el.val() === "MANUAL") {
+            $("#status option:last-child").remove();
+         }
+      });
+
+   });
+
 })(jQuery); // End of use strict

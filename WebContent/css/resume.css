@@ -10187,3 +10187,8 @@ footer {
    padding: 4px;
    margin-left: 3px;
 }
+
+.hidden {
+   display: none;
+}
+}

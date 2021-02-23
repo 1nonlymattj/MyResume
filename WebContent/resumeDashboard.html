@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>One Stop Shop For Resumes</title>
+<meta charset="UTF-8">
+<title>One Stop Shop - Resume Dashboard</title>
 
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +17,6 @@
 </head>
 
 <body>
-
    <div class="d-flex" id="wrapper">
 
       <!-- Sidebar -->
@@ -31,8 +24,8 @@
          <div class="sidebar-heading">Resumes</div>
          <div class="list-group list-group-flush">
             <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a> <a
-               href="resumeDashboard.html" class="list-group-item list-group-item-action bg-light">Resume
-               Dashboard</a> <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a> <a href="#"
+               href="resumeDashboard.html" class="list-group-item list-group-item-action bg-light">Resume Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a> <a href="#"
                class="list-group-item list-group-item-action bg-light">Overview</a> <a href="#"
                class="list-group-item list-group-item-action bg-light">Events</a> <a href="#"
                class="list-group-item list-group-item-action bg-light">Profile</a> <a href="#Resources"
@@ -53,57 +46,34 @@
          </nav>
 
          <div class="container-fluid">
-            <h1 class="mt-4">Looking for the best qualified candidate?</h1>
-            <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
-               non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-            <p>
-               Make sure to keep all page content within the
-               <code>#page-content-wrapper</code>
-               . The top navbar is optional, and just for demonstration. Just create an element with the
-               <code>#menu-toggle</code>
-               ID which will toggle the menu when clicked.
-            </p>
+            <h1 class="mt-4">Which Job Field are you interested in?</h1>
+            <p>Click on Interested Job Field for Resumes for individual Canidates</p>
+            <div>
+               <h1 class="mt-4">Resume Fields</h1>
+               <p>
+                  <a class="pupsLink" href="#ITJobField" onclick="showITResumes()">Information Technology</a>
+               </p>
+               <div id="ITResumes" style="display: none">
+               <ul>
+               <li><a href="MatthewRJohnsonResume.html">Matthew R Johnson Resume</a></li>
+               <li><a href="MatthewRJohnsonResume.html">Matthew R Johnson Resume</a></li>
+               </ul>
+               </div>
+               <br>
+               <p>
+                  <a href="#">Human Resources</a>
+               </p>
+            </div>
          </div>
       </div>
-      <!-- /#page-content-wrapper -->
-      <div id=Resources">
-         <div class="container-fluid">
-            <h1 class="mt-4">Resume Fields</h1>
-            <p>
-               <a href="#">Information Technology</a>
-            </p>
-            <p>
-               <a href="#">Human Resources</a>
-            </p>
-         </div>
-
-
-         <div class="container-fluid">
-            <h1 class="mt-4">RESOURCES</h1>
-            <p>Download Two Week Notice Template</p>
-            <p>
-               <a href="TwoWeekNoticeTemplates/Two Week Notice Template.dotx" download>Two Week Notice Template 1
-                  &nbsp;<i class="fas fa-file-download"></i>
-               </a>
-            </p>
-            <br>
-            <p>Download Resume Templates</p>
-            <p>
-               <a href="ResumeTemplates/Resume Template (Example 1).docx" download>Resume Template 1 &nbsp;<i
-                  class="fas fa-file-download"></i></a>
-            </p>
-         </div>
-      </div>
-
    </div>
 
-   <!-- /#wrapper -->
-   <!-- Footer -->
    <div id="foot-placeholder"></div>
    <!-- End of Footer-->
 
    <!-- Bootstrap core JavaScript -->
    <script src="js/resume.js"></script>
+   <script src="js/onestopshop.js"></script>
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -114,12 +84,6 @@
                $("#wrapper").toggleClass("toggled");
             });
          </script>
-   <script>
-            $(function() {
-               $("#foot-placeholder").load("footer.html");
-            });
-         </script>
 
 </body>
-
 </html>
